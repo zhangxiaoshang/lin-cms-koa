@@ -38,6 +38,7 @@ bookApi.get('/:id', async ctx => {
 });
 
 bookApi.get('/', async ctx => {
+  console.log('get books');
   const books = await bookDto.getBooks();
   // if (!books || books.length < 1) {
   //   throw new NotFound({
